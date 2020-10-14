@@ -1,0 +1,6 @@
+{
+  "gitHost": "github.com",
+  "gitUserId": "IBM",
+  "gitRepoId": "event-streams-go-sdk-generator",
+  "useRuntimeException": true
+}
