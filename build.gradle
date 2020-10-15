@@ -1,0 +1,31 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+}
+
+plugins {
+    id "org.openapi.generator" version "4.3.0"
+}
+
+apply plugin: 'java'
+
+def majorMinorVersion = "1.0.0"
+
+openApiValidate {
+    inputSpec = "$rootDir/documentation/swagger.yaml"
+}
+
+openApiGenerate {
+    generatorName = "go"
+    inputSpec = "$rootDir/documentation/swagger.yaml"
+    outputDir = "$buildDir/generated".toString()
+    packageName = "generated"
+    configFile = "$rootDir/documentation/config.json"
+    templateDir = "$rootDir/templates"
+    generateApiTests = false
+    generateModelTests = false
+    auth = "Authorization"
+}
