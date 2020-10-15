@@ -1,0 +1,9 @@
+# gradle files:
+.gradle
+
+# IntelliJ
+*.iml
+/.idea
+
+build/generated/go.mod
+build/generated/go.sum
