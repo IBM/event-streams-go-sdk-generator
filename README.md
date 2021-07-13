@@ -11,7 +11,7 @@ Then import the generated client:
 ```
 eventstreams "github.com/IBM/event-streams-go-sdk-generator/build/generated"
 ```
-See the generated [documentation](build/generated/READcliME.md) for details about the client.
+See the generated [documentation](build/generated/README.md) for details about the client.
 
 ## Code Generation
 ###### NOTE: This SDK Generation project/Guide uses the OpenAPI Generator Gradle Plugin (version "4.3.0"). This is used for Open API 3.x specification (swagger) documents. 
